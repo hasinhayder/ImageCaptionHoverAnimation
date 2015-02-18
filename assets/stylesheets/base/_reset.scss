@@ -1,0 +1,29 @@
+/////
+// reset
+/////
+* {
+  padding:0;
+  margin:0;
+  border:0;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
+after, hgroup:after, nav:after, footer:after, header:after, section:after, div:after, ol:after, ul:after, li:after, dl:after {
+  content:".";
+  display:block;
+  clear:both;
+  visibility:hidden;
+  height:0;
+  overflow:hidden;
+}
+a { color: inherit; }
+html {
+  //font-family: $FONT_R, Helvetica, Arial, sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}

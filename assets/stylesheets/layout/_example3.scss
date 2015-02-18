@@ -1,0 +1,60 @@
+// Example 3
+.caption-style-3 li:hover .caption{
+	opacity: 1;
+	transform: translateY(-100px);
+	-webkit-transform:translateY(-100px);
+	-moz-transform:translateY(-100px);
+	-ms-transform:translateY(-100px);
+	-o-transform:translateY(-100px);
+}
+
+.caption-style-3 li:hover img{
+	opacity: 1;
+	transform: translateY(-80px);
+	-webkit-transform:translateY(-80px);
+	-moz-transform:translateY(-80px);
+	-ms-transform:translateY(-80px);
+	-o-transform:translateY(-80px);
+
+}
+.caption-style-3 .caption{
+	cursor: pointer;
+	position: absolute;
+	opacity: 0;
+	top: 320px;
+	-webkit-transition:all 0.25s ease-in-out;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out;
+
+}
+.caption-style-3 img{
+	-webkit-transition:all 0.25s ease-in-out;
+	-moz-transition:all 0.25s ease-in-out;
+	-o-transition:all 0.25s ease-in-out;
+	-ms-transition:all 0.25s ease-in-out;
+	transition:all 0.25s ease-in-out;
+
+}
+.caption-style-3 .blur{
+	background-color: rgba(142, 68, 173,0.95);
+	height: 300px;
+	width: 400px;
+	z-index: 5;
+	position: absolute;
+}
+
+.caption-style-3 .caption-text h1{
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.caption-style-3 .caption-text{
+	z-index: 10;
+	color: #fff;
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	text-align: center;
+	top:20px;
+}

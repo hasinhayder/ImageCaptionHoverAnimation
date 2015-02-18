@@ -1,0 +1,40 @@
+// Content
+
+.content {
+	color: #ecf0f1;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Lato";
+
+	h1, h2 {
+		color: #ecf0f1;
+		line-height: 90%;
+		font-weight: normal;
+		margin-bottom: 30px;
+		text-transform: lowercase;
+		font-family: "Source Sans Pro",sans-serif;
+	}
+
+	h1 { 
+		font-size: 66px; 
+		font-weight: bold;
+		margin-bottom: 15px;
+		letter-spacing: -2px;
+		text-transform: uppercase
+	}
+}
+// p.credit{
+// 	padding-top: 20px;
+// 	font-size: 12px;
+// }
+
+// p a{
+// 	color: #ecf0f1;
+// }
+
+/** fork icon**/
+.fork{
+	position: absolute;
+	top:0px;
+	left: 0px;
+}

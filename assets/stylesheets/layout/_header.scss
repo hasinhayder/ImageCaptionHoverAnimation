@@ -1,0 +1,7 @@
+// Header
+#header {
+	padding: 80px 0;
+	background: #2980b9;
+	margin-bottom: 40px;
+	@include box-shadow( 0 -9px 6px -5px rgba( #000, 0.30 ) inset );
+}

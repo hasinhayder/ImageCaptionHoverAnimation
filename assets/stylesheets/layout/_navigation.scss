@@ -1,0 +1,19 @@
+// Navigation
+.nav-menu {
+	display: table;
+	list-style-type: none;
+	margin: 0 auto 40px auto;
+
+	li{
+		float: left;
+		margin-right: 20px;
+	}
+	a {
+		color: #fff;
+		padding: 10px 20px;
+		display: block;
+		text-decoration: none;
+		@include bg-color( #4FB24F );
+		@include border-radius( 3px );
+	}
+}

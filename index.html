@@ -9,186 +9,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900">
-	<style type="text/css">
-	body{
-		/*height: 10000px;*/
-		font-family: "Lato";
-		background-color: #2980b9;
-		padding:20px 30px;
-		margin: 0px;
-	}
-
-	h1,h2,h3,h4{
-		padding: 0px;
-		margin: 0px;
-	}
-
-	.caption-style-1{
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-		
-	}
-
-	.caption-style-1 li{
-		float: left;
-		padding: 0px;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.caption-style-1 li:hover .caption{
-		opacity: 1;
-
-	}
-
-
-	.caption-style-1 img{
-		margin: 0px;
-		padding: 0px;
-		float: left;
-		z-index: 4;
-	}
-
-
-	.caption-style-1 .caption{
-		cursor: pointer;
-		position: absolute;
-		opacity: 0;
-		-webkit-transition:all 0.45s ease-in-out;
-		-moz-transition:all 0.45s ease-in-out;
-		-o-transition:all 0.45s ease-in-out;
-		-ms-transition:all 0.45s ease-in-out;
-		transition:all 0.45s ease-in-out;
-
-	}
-	.caption-style-1 .blur{
-		background-color: rgba(0,0,0,0.65);
-		height: 300px;
-		width: 400px;
-		z-index: 5;
-		position: absolute;
-	}
-
-	.caption-style-1 .caption-text h1{
-		text-transform: uppercase;
-		font-size: 24px;
-	}
-	.caption-style-1 .caption-text{
-		z-index: 10;
-		color: #fff;
-		position: absolute;
-		width: 400px;
-		height: 300px;
-		text-align: center;
-		top:100px;
-	}
-
-	/** Nav Menu */
-	ul.nav-menu{
-		padding: 0px;
-		margin: 0px;
-		list-style-type: none;
-		width: 490px;
-		margin: 60px auto;
-	}
-
-	ul.nav-menu li{
-		display: inline;
-		margin-right: 10px;
-		padding:10px;
-		border: 1px solid #ddd;
-	}
-
-	ul.nav-menu li a{
-		color: #eee;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-
-	ul.nav-menu li a:hover, ul.nav-menu li a.active{
-		color: #2c3e50;
-	} 
-
-	/** content **/
-	.content{
-		margin-top: 100px;
-		margin-left: 100px;
-		width: 700px;
-	}
-	.content h1, .content h2{
-		font-family: "Source Sans Pro",sans-serif;
-		color: #ecf0f1;
-		padding: 0px;
-		margin: 0px;
-		font-weight: normal;
-	}
-
-	.content h1{
-		font-weight: 900;
-		font-size: 64px;
-	}
-
-	.content h2{
-		font-size:26px;
-	}
-
-	.content p{
-		color: #ecf0f1;
-		font-family: "Lato";
-		line-height: 28px;
-		font-size: 15px;
-		padding-top: 50px;
-	}
-
-	p.credit{
-		padding-top: 20px;
-		font-size: 12px;
-	}
-
-	p a{
-		color: #ecf0f1;
-	}
-
-	/** fork icon**/
-	.fork{
-		position: absolute;
-		top:0px;
-		left: 0px;
-	}
-
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="fork">
-		<a href='https://github.com/hasinhayder/ImageCaptionHoverAnimation' target='_blank'><img src="img/fork.png" alt=""></a>
-	</div>
+	<header id="header">
+		<div class="container">
+			
+			<div class="fork">
+				<a href='https://github.com/hasinhayder/ImageCaptionHoverAnimation' target='_blank'><img src="assets/img/fork.png" alt=""></a>
+			</div>
+			
+			<div class="content">
+				<h1>IMAGE CAPTION HOVER ANIMATION</h1>
+				<h2>WITH CSS3 TRANSITIONS & TRANSFORMS</h2>
+				<p>
+					This is an example of caption animation while hovering on images, using CSS3 transitions and transform rules. There is no Javascript used so it will work on modern browsers where CSS3 animations are supported. Please check the sourcecode of this page to understand how the animation is working. 
+				</p>
+			</div>
 
-	<div class="content">
-		<h1>IMAGE CAPTION HOVER ANIMATION</h1>
-		<h2>WITH CSS3 TRANSITIONS & TRANSFORMS</h2>
-		<p>
-			This is an example of caption animation while hovering on images, using CSS3 transitions and transform rules. There is no Javascript used so it will work on modern browsers where CSS3 animations are supported. Please check the sourcecode of this page to understand how the animation is working. 
-		</p>
+		</div><!-- Layout -->
+	</header><!-- header -->
 
-		<p class="credit">
-			Illustration Credit: Illustrations used in this example are coming from <a href='http://dribbble.com/creativemints' target='_blank'> Mike | Creative Mints</a>  & <a href='http://dribbble.com/colinhesterly' target='_blank'> Colin Hesterly</a> . 
-		</p>
-	</div>
-
-	<div class="nav">
+	<nav class="nav">
 		<ul class="nav-menu">
 			<li><a class="active" href='index.html'>Example 1</a></li>
 			<li><a href='index2.html'>Example 2</a></li>
 			<li><a href='index3.html'>Example 3</a></li>
 			<li><a href='index4.html'>Example 4</a></li>
 		</ul>
-	</div>
+	</nav>
 
-	<div class="container-a1">
+	<div class="card-list container container-a1">
+	
 		<ul class="caption-style-1">
 			<li>
-				<img src="img/chaps_1x.jpg" alt="">
+				<img src="assets/img/chaps_1x.jpg" alt="">
 				<div class="caption">
 					<div class="blur"></div>
 					<div class="caption-text">
@@ -198,7 +53,7 @@
 				</div>
 			</li>
 			<li>
-				<img src="img/everycowboy_dribbbleready_shot.jpg" alt="">
+				<img src="assets/img/everycowboy_dribbbleready_shot.jpg" alt="">
 				<div class="caption">
 					<div class="blur"></div>
 					<div class="caption-text">
@@ -208,7 +63,7 @@
 				</div>
 			</li>
 			<li>
-				<img src="img/ithinkican_01.jpg" alt="">
+				<img src="assets/img/ithinkican_01.jpg" alt="">
 				<div class="caption">
 					<div class="blur"></div>
 					<div class="caption-text">
@@ -218,7 +73,7 @@
 				</div>
 			</li>
 			<li>
-				<img src="img/m.jpg" alt="">
+				<img src="assets/img/m.jpg" alt="">
 				<div class="caption">
 					<div class="blur"></div>
 					<div class="caption-text">
@@ -228,7 +83,7 @@
 				</div>
 			</li>
 			<li>
-				<img src="img/raspberry.jpg" alt="">
+				<img src="assets/img/raspberry.jpg" alt="">
 				<div class="caption">
 					<div class="blur"></div>
 					<div class="caption-text">
@@ -238,7 +93,7 @@
 				</div>
 			</li>
 			<li>
-				<img src="img/sketch_1x.jpg" alt="">
+				<img src="assets/img/sketch_1x.jpg" alt="">
 				<div class="caption">
 					<div class="blur"></div>
 					<div class="caption-text">
@@ -248,6 +103,19 @@
 				</div>
 			</li>
 		</ul>
+
 	</div>
+
+	<footer id="footer">
+
+		<span class="credit">
+			Illustration Credit: Illustrations used in this example are coming from 
+			<a href='http://dribbble.com/creativemints' target='_blank'> Mike | Creative Mints</a>  
+			& 
+			<a href='http://dribbble.com/colinhesterly' target='_blank'> Colin Hesterly</a> . 
+		</span>
+		
+	</footer>
+
 </body>
 </html>
