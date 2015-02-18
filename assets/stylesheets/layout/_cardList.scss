@@ -1,0 +1,19 @@
+// Card List
+.card-list {
+	
+	li {
+		float: left;
+		width: 400px;
+		list-style-type: none;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			height: auto; 
+			display: block;
+			max-width: 100%;
+		}
+
+	}
+
+}

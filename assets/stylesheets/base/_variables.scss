@@ -1,0 +1,12 @@
+// Variables
+
+
+@mixin bg-color($color) {
+	background-color: $color;
+
+	@include transition();
+
+	&:visited { background-color: $color; }
+	&:hover   { background-color: darken($color, 10); }
+	&:active  { background-color: darken($color, 15); }
+}
