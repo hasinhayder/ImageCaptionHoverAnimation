@@ -23,32 +23,38 @@
 		margin: 0px;
 	}
 
-	.caption-style-2{
+	.caption-style-5{
 		list-style-type: none;
 		margin: 0px;
 		padding: 0px;
 		
 	}
 
-	.caption-style-2 li{
+	.caption-style-5 li{
 		float: left;
 		padding: 0px;
 		position: relative;
 		overflow: hidden;
 	}
 
-	.caption-style-2 li:hover .caption{
+	.caption-style-5 li:hover .caption{
 		opacity: 1;
-		transform: translateY(-100px);
-		-webkit-transform:translateY(-100px);
-		-moz-transform:translateY(-100px);
-		-ms-transform:translateY(-100px);
-		-o-transform:translateY(-100px);
+	}
 
+	.caption-style-5 li:hover img{
+		border-radius: 50%;
+		opacity: 1;
+		bottom: 25px;
+		transform: scale(.5,.5);
+		-webkit-transform:scale(.5,.5);
+		-moz-transform:scale(.5,.5);
+		-ms-transform:scale(.5,.5);
+		-o-transform:scale(.5,.5);
 	}
 
 
-	.caption-style-2 img{
+	.caption-style-5 img{
+		position: relative;
 		margin: 0px;
 		padding: 0px;
 		float: left;
@@ -56,38 +62,44 @@
 	}
 
 
-	.caption-style-2 .caption{
+	.caption-style-5 .caption{
 		cursor: pointer;
 		position: absolute;
 		opacity: 0;
-		top:300px;
-		-webkit-transition:all 0.15s ease-in-out;
-		-moz-transition:all 0.15s ease-in-out;
-		-o-transition:all 0.15s ease-in-out;
-		-ms-transition:all 0.15s ease-in-out;
-		transition:all 0.15s ease-in-out;
-
+		-webkit-transition:all 0.45s ease-in-out;
+		-moz-transition:all 0.45s ease-in-out;
+		-o-transition:all 0.45s ease-in-out;
+		-ms-transition:all 0.45s ease-in-out;
+		transition:all 0.45s ease-in-out;
 	}
-	.caption-style-2 .blur{
-		background-color: rgba(0,0,0,0.7);
+
+	.caption-style-5 img{
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		-ms-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+	}
+	.caption-style-5 .blur{
+		/*background-color: rgba(0,0,0,0.65);*/
 		height: 300px;
 		width: 400px;
 		z-index: 5;
 		position: absolute;
 	}
 
-	.caption-style-2 .caption-text h1{
+	.caption-style-5 .caption-text h1{
 		text-transform: uppercase;
-		font-size: 18px;
+		font-size: 24px;
 	}
-	.caption-style-2 .caption-text{
+	.caption-style-5 .caption-text{
 		z-index: 10;
 		color: #fff;
 		position: absolute;
 		width: 400px;
 		height: 300px;
 		text-align: center;
-		top:20px;
+		top: 200px;
 	}
 
 
@@ -116,6 +128,7 @@
 	ul.nav-menu li a:hover, ul.nav-menu li a.active{
 		color: #2c3e50;
 	} 
+
 	/** content **/
 	.content{
 		margin-top: 100px;
@@ -184,15 +197,15 @@
 	<div class="nav">
 		<ul class="nav-menu">
 			<li><a href='index.html'>Example 1</a></li>
-			<li><a class="active" href='index2.html'>Example 2</a></li>
+			<li><a href='index2.html'>Example 2</a></li>
 			<li><a href='index3.html'>Example 3</a></li>
 			<li><a href='index4.html'>Example 4</a></li>
-			<li><a href='index5.html'>Example 5</a></li>
+			<li><a class="active" href='index5.html'>Example 5</a></li>
 		</ul>
 	</div>
 
-	<div class="container-a2">
-		<ul class="caption-style-2">
+	<div class="container-a4">
+		<ul class="caption-style-5">
 			<li>
 				<img src="img/chaps_1x.jpg" alt="">
 				<div class="caption">
